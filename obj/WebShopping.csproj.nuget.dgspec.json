@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WebShopping\\WebShopping.csproj": {}
+    "D:\\Web_Shopping\\WebShopping.csproj": {}
   },
   "projects": {
-    "D:\\WebShopping\\WebShopping.csproj": {
+    "D:\\Web_Shopping\\WebShopping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebShopping\\WebShopping.csproj",
+        "projectUniqueName": "D:\\Web_Shopping\\WebShopping.csproj",
         "projectName": "WebShopping",
-        "projectPath": "D:\\WebShopping\\WebShopping.csproj",
+        "projectPath": "D:\\Web_Shopping\\WebShopping.csproj",
         "packagesPath": "C:\\Users\\SV\\.nuget\\packages\\",
-        "outputPath": "D:\\WebShopping\\obj\\",
+        "outputPath": "D:\\Web_Shopping\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
