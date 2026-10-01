@@ -1,0 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+[Table("Category")]
+public class Category
+{
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int CategoryId { get; set; }
+
+    [Required(ErrorMessage = "Tên danh mục sản phẩm là bắt buộc.")]
+    [StringLength(100)]
+    [Column(TypeName = "NVARCHAR(100)")]
+    public string CategoryName { get; set; }
+
+    [Column(TypeName = "NVARCHAR(MAX)")]
+    public string? Description { get; set; }
+}
