@@ -1,27 +1,27 @@
 @model Category
 
 @{
-    ViewData["Title"] = "Chi tiết danh mục";
+    ViewData["Title"] = "Category Details";
 }
 
-<h2>Chi tiết danh mục</h2>
+<h2>Category Details</h2>
 
 <div class="card">
     <div class="card-body">
         <dl class="row">
-            <dt class="col-sm-3">Mã danh mục</dt>
+            <dt class="col-sm-3">Category ID</dt>
             <dd class="col-sm-9">@Model.CategoryId</dd>
 
-            <dt class="col-sm-3">Tên danh mục</dt>
+            <dt class="col-sm-3">Category Name</dt>
             <dd class="col-sm-9">@Model.CategoryName</dd>
 
-            <dt class="col-sm-3">Mô tả</dt>
+            <dt class="col-sm-3">Description</dt>
             <dd class="col-sm-9">@(string.IsNullOrWhiteSpace(Model.Description) ? "-" : Model.Description)</dd>
         </dl>
     </div>
 </div>
 
 <div class="mt-3">
-    <a asp-action="Edit" asp-route-id="@Model.CategoryId" class="btn btn-warning">Sửa</a>
-    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    <a asp-action="Edit" asp-route-id="@Model.CategoryId" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
 </div>

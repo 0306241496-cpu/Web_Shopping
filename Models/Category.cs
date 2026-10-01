@@ -8,7 +8,7 @@ public class Category
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int CategoryId { get; set; }
 
-    [Required(ErrorMessage = "Tên danh mục sản phẩm là bắt buộc.")]
+    [Required(ErrorMessage = "Category name is required.")]
     [StringLength(100)]
     [Column(TypeName = "NVARCHAR(100)")]
     public string CategoryName { get; set; }

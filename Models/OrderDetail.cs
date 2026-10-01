@@ -12,14 +12,14 @@ public class OrderDetail
 
     public int ProductId { get; set; }
 
-    [Required(ErrorMessage = "Số lượng là bắt buộc nhập.")]
-    [Range(1, int.MaxValue, ErrorMessage = "Số lượng sản phẩm mua phải lớn hơn 0.")]
+    [Required(ErrorMessage = "Quantity is required.")]
+    [Range(1, int.MaxValue, ErrorMessage = "Quantity must be greater than 0.")]
     public int Quantity { get; set; }
 
     [Column(TypeName = "DECIMAL(18,2)")]
     public decimal UnitPrice { get; set; }
 
-    // Thuộc tính điều hướng (Navigation Properties)
+    // Navigation properties
     [ForeignKey("OrderId")]
     public virtual Order? Order { get; set; }
 

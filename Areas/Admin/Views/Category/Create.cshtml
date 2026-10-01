@@ -1,28 +1,28 @@
 @model Category
 
 @{
-    ViewData["Title"] = "Thêm danh mục";
+    ViewData["Title"] = "Add Category";
 }
 
-<h2>Thêm danh mục</h2>
+<h2>Add Category</h2>
 
 <form asp-action="Create" method="post">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <div class="mb-3">
-        <label asp-for="CategoryName" class="form-label">Tên danh mục</label>
+        <label asp-for="CategoryName" class="form-label">Category Name</label>
         <input asp-for="CategoryName" class="form-control" />
         <span asp-validation-for="CategoryName" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Description" class="form-label">Mô tả</label>
+        <label asp-for="Description" class="form-label">Description</label>
         <textarea asp-for="Description" class="form-control" rows="4"></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Lưu</button>
-    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
 </form>
 
 @section Scripts {

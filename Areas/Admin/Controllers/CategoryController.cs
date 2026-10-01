@@ -40,7 +40,7 @@ public class CategoryController : Controller
         _context.Categories.Add(category);
         await _context.SaveChangesAsync();
 
-        TempData["SuccessMessage"] = "Thêm danh mục thành công.";
+        TempData["SuccessMessage"] = "Category added successfully.";
         return RedirectToAction(nameof(Index));
     }
 
@@ -84,7 +84,7 @@ public class CategoryController : Controller
             throw;
         }
 
-        TempData["SuccessMessage"] = "Cập nhật danh mục thành công.";
+        TempData["SuccessMessage"] = "Category updated successfully.";
         return RedirectToAction(nameof(Index));
     }
 
@@ -127,7 +127,7 @@ public class CategoryController : Controller
         _context.Categories.Remove(category);
         await _context.SaveChangesAsync();
 
-        TempData["SuccessMessage"] = "Xóa danh mục thành công.";
+        TempData["SuccessMessage"] = "Category deleted successfully.";
         return RedirectToAction(nameof(Index));
     }
 

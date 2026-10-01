@@ -44,7 +44,7 @@ public class ProductController : Controller
         _context.Products.Add(product);
         await _context.SaveChangesAsync();
 
-        TempData["SuccessMessage"] = "Thêm sản phẩm thành công.";
+        TempData["SuccessMessage"] = "Product added successfullyly.";
         return RedirectToAction(nameof(Index));
     }
 
@@ -90,7 +90,7 @@ public class ProductController : Controller
             throw;
         }
 
-        TempData["SuccessMessage"] = "Cập nhật sản phẩm thành công.";
+        TempData["SuccessMessage"] = "Product updated successfully.";
         return RedirectToAction(nameof(Index));
     }
 
@@ -135,7 +135,7 @@ public class ProductController : Controller
         _context.Products.Remove(product);
         await _context.SaveChangesAsync();
 
-        TempData["SuccessMessage"] = "Xóa sản phẩm thành công.";
+        TempData["SuccessMessage"] = "Product deleted successfully.";
         return RedirectToAction(nameof(Index));
     }
 

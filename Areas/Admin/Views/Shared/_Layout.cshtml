@@ -19,23 +19,26 @@
     <link rel="stylesheet" href="~/WebShopping.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <partial name="_Navigation"/>
-    <partial name="_sidebar"/>
+    <div id="wrapper">
+        <partial name="_Navigation" />
+        <partial name="_sidebar" />
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
     </div>
-   
-    <script src="~/js_admin/bootstrap.min.js"></script>
-    
-    <script src="~/js_admin/flot-data.js"></script>
+
     <script src="~/js_admin/jquery.min.js"></script>
+    <script src="~/js_admin/bootstrap.min.js"></script>
     <script src="~/js_admin/metisMenu.min.js"></script>
-    <script src="~/js_admin/morris-data.js"></script>
-    <script src="~/js_admin/morris.min.js"></script>
     <script src="~/js_admin/raphael.min.js"></script>
+    <script src="~/js_admin/morris.min.js"></script>
+    <script src="~/js_admin/flot-data.js"></script>
+    <script src="~/js_admin/morris-data.js"></script>
     <script src="~/js_admin/startmin.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)

@@ -1,23 +1,23 @@
 @model Category
 
 @{
-    ViewData["Title"] = "Xóa danh mục";
+    ViewData["Title"] = "Delete Category";
 }
 
-<h2>Xóa danh mục</h2>
+<h2>Delete Category</h2>
 
-<h3>Bạn có chắc chắn muốn xóa danh mục này?</h3>
+<h3>Are you sure you want to delete this category?</h3>
 
 <div class="card">
     <div class="card-body">
         <dl class="row">
-            <dt class="col-sm-3">Mã danh mục</dt>
+            <dt class="col-sm-3">Category ID</dt>
             <dd class="col-sm-9">@Model.CategoryId</dd>
 
-            <dt class="col-sm-3">Tên danh mục</dt>
+            <dt class="col-sm-3">Category Name</dt>
             <dd class="col-sm-9">@Model.CategoryName</dd>
 
-            <dt class="col-sm-3">Mô tả</dt>
+            <dt class="col-sm-3">Description</dt>
             <dd class="col-sm-9">@(string.IsNullOrWhiteSpace(Model.Description) ? "-" : Model.Description)</dd>
         </dl>
     </div>
@@ -25,6 +25,6 @@
 
 <form asp-action="Delete" method="post">
     <input type="hidden" asp-for="CategoryId" />
-    <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
-    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    <button type="submit" class="btn btn-danger">Confirm Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>

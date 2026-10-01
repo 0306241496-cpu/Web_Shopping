@@ -9,18 +9,18 @@ public class Order
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int OrderId { get; set; }
 
-    [Required(ErrorMessage = "Họ tên người đặt hàng là bắt buộc.")]
+    [Required(ErrorMessage = "Customer name is required.")]
     [StringLength(100)]
     [Column(TypeName = "NVARCHAR(100)")]
     public string CustomerName { get; set; }
 
-    [Required(ErrorMessage = "Số điện thoại là bắt buộc.")]
-    [Phone(ErrorMessage = "Số điện thoại không đúng định dạng.")]
+    [Required(ErrorMessage = "Phone number is required.")]
+    [Phone(ErrorMessage = "Phone number is invalid.")]
     [StringLength(15)]
     [Column(TypeName = "VARCHAR(15)")]
     public string Phone { get; set; }
 
-    [Required(ErrorMessage = "Địa chỉ giao hàng là bắt buộc.")]
+    [Required(ErrorMessage = "Shipping address is required.")]
     [StringLength(255)]
     [Column(TypeName = "NVARCHAR(255)")]
     public string Address { get; set; }
@@ -31,7 +31,7 @@ public class Order
 
     [StringLength(50)]
     [Column(TypeName = "NVARCHAR(50)")]
-    public string Status { get; set; } = "Chờ xử lý";
+    public string Status { get; set; } = "Pending";
 
     [Column(TypeName = "DATETIME")]
     public DateTime CreatedDate { get; set; } = DateTime.Now;

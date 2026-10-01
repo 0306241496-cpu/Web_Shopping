@@ -8,13 +8,13 @@ public class Product
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int ProductId { get; set; }
 
-    [Required(ErrorMessage = "Tên sản phẩm là bắt buộc nhập.")]
+    [Required(ErrorMessage = "Product name is required.")]
     [StringLength(200)]
     [Column(TypeName = "NVARCHAR(200)")]
     public string ProductName { get; set; }
 
-    [Required(ErrorMessage = "Giá bán là bắt buộc nhập.")]
-    [Range(0.01, double.MaxValue, ErrorMessage = "Giá trị phải lớn hơn 0.")]
+    [Required(ErrorMessage = "Selling price is required.")]
+    [Range(0.01, double.MaxValue, ErrorMessage = "Price must be greater than 0.")]
     [Column(TypeName = "DECIMAL(18,2)")]
     public decimal Price { get; set; }
 
