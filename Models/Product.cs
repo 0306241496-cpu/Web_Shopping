@@ -11,7 +11,7 @@ public class Product
     [Required(ErrorMessage = "Product name is required.")]
     [StringLength(200)]
     [Column(TypeName = "NVARCHAR(200)")]
-    public string ProductName { get; set; }
+    public string ProductName { get; set; }=string.Empty;
 
     [Required(ErrorMessage = "Selling price is required.")]
     [Range(0.01, double.MaxValue, ErrorMessage = "Price must be greater than 0.")]

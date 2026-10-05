@@ -1,5 +1,15 @@
+if (typeof $.plot === "function") {
+
 //Flot Line Chart
 $(document).ready(function() {
+    if (typeof $.plot !== "function") {
+        return;
+    }
+
+    if (!$("#flot-line-chart").length) {
+        return;
+    }
+
     console.log("document ready");
     var offset = 0;
     plot();
@@ -51,6 +61,9 @@ $(document).ready(function() {
 
 //Flot Pie Chart
 $(function() {
+    if (typeof $.plot !== "function" || !$("#flot-pie-chart").length) {
+        return;
+    }
 
     var data = [{
         label: "Series 0",
@@ -90,6 +103,10 @@ $(function() {
 
 //Flot Multiple Axes Line Chart
 $(function() {
+    if (typeof $.plot !== "function" || !$("#flot-line-chart-multi").length) {
+        return;
+    }
+
     var oilprices = [
         [1167692400000, 61.05],
         [1167778800000, 58.32],
@@ -1240,3 +1257,5 @@ $(function() {
     $.plot($("#flot-bar-chart"), [barData], barOptions);
 
 });
+
+}

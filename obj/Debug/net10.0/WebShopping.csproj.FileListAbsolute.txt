@@ -179,10 +179,8 @@ D:\Web_Shopping\bin\Debug\net10.0\runtimes\osx-x64\native\msalruntime.dylib
 D:\Web_Shopping\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
 D:\Web_Shopping\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 D:\Web_Shopping\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
-D:\Web_Shopping\obj\Debug\net10.0\compressed\pi5z4jtsyd-{0}-6piqkm282e-6piqkm282e.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\kzxl9xwxax-{0}-cy3o92bfjz-cy3o92bfjz.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\q6626t3oaa-{0}-caayb1ntf8-caayb1ntf8.gz
-D:\Web_Shopping\obj\Debug\net10.0\compressed\bt92axns0x-{0}-ns5w7aftb2-ns5w7aftb2.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\e6t4ozcdoi-{0}-va3f1cakmg-va3f1cakmg.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\1127qn6t08-{0}-sp7gdefjs0-sp7gdefjs0.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\vs1ksvp7xy-{0}-i4evt5vn6u-i4evt5vn6u.gz
@@ -192,7 +190,6 @@ D:\Web_Shopping\obj\Debug\net10.0\compressed\hv45yv3oqd-{0}-zt553yt6yj-zt553yt6y
 D:\Web_Shopping\obj\Debug\net10.0\compressed\ua8kuqvf7e-{0}-jbeyo58t54-jbeyo58t54.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\dnfcd7hlyg-{0}-von3s7z8jm-von3s7z8jm.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\spm7ryonq0-{0}-1da6larbp9-1da6larbp9.gz
-D:\Web_Shopping\obj\Debug\net10.0\compressed\db34ktw88n-{0}-x9zmxawc9u-x9zmxawc9u.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\z2bfjtigh1-{0}-6k1k68rl85-6k1k68rl85.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\lc8a97pwjw-{0}-49x56u3sm7-49x56u3sm7.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\2vtvl1dn36-{0}-602h65g6zm-602h65g6zm.gz
@@ -227,3 +224,6 @@ D:\Web_Shopping\obj\Debug\net10.0\compressed\we09717jac-{0}-isc7u9n7qi-isc7u9n7q
 D:\Web_Shopping\obj\Debug\net10.0\compressed\kwo11eo51t-{0}-p4l3ph5mj3-p4l3ph5mj3.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\hhlfvkygaj-{0}-bhrxaht8ww-bhrxaht8ww.gz
 D:\Web_Shopping\obj\Debug\net10.0\WebShopp.03C262A9.Up2Date
+D:\Web_Shopping\obj\Debug\net10.0\compressed\bt92axns0x-{0}-l98s1f2irw-l98s1f2irw.gz
+D:\Web_Shopping\obj\Debug\net10.0\compressed\db34ktw88n-{0}-ss25vi1sum-ss25vi1sum.gz
+D:\Web_Shopping\obj\Debug\net10.0\compressed\pi5z4jtsyd-{0}-p6c4eoi30l-p6c4eoi30l.gz

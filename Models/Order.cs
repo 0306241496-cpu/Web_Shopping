@@ -12,18 +12,18 @@ public class Order
     [Required(ErrorMessage = "Customer name is required.")]
     [StringLength(100)]
     [Column(TypeName = "NVARCHAR(100)")]
-    public string CustomerName { get; set; }
+    public string CustomerName { get; set; }=string.Empty;
 
     [Required(ErrorMessage = "Phone number is required.")]
     [Phone(ErrorMessage = "Phone number is invalid.")]
     [StringLength(15)]
     [Column(TypeName = "VARCHAR(15)")]
-    public string Phone { get; set; }
+    public string Phone { get; set; }=  string.Empty;
 
     [Required(ErrorMessage = "Shipping address is required.")]
     [StringLength(255)]
     [Column(TypeName = "NVARCHAR(255)")]
-    public string Address { get; set; }
+    public string Address { get; set; }=string.Empty;
 
     [StringLength(500)]
     [Column(TypeName = "NVARCHAR(500)")]

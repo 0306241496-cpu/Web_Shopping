@@ -1,4 +1,11 @@
 $(function() {
+    if (typeof Morris === "undefined") {
+        return;
+    }
+
+    if (!$("#morris-area-chart").length && !$("#morris-donut-chart").length && !$("#morris-bar-chart").length) {
+        return;
+    }
 
     Morris.Area({
         element: 'morris-area-chart',
