@@ -12,7 +12,7 @@ using WebShopping.Data;
 namespace WebShopping.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20261001065133_InitialCreate")]
+    [Migration("20261005070012_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

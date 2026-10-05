@@ -22,7 +22,7 @@ public class Product
     public string? Description { get; set; }
 
     [StringLength(255)]
-    [Column(TypeName = "NVARCHAR(255)")]
+    [Column("Image", TypeName = "NVARCHAR(255)")]
     public string? ImageUrl { get; set; }
 
     public int CategoryId { get; set; }
