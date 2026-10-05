@@ -1,6 +1,191 @@
-<aside class="sidebar navbar-default" role="navigation">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Admin 2 - Navbar & Sidebar Fixed</title>
+
+    <!-- 1. CSS Thư viện bắt buộc -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.9/metisMenu.min.css">
+
+    <!-- 2. CSS Sửa lỗi tràn Navbar & căn vị trí Sidebar -->
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        /* --- SỬA LỖI NAVBAR --- */
+        .navbar-fixed-top {
+            min-height: 50px !important;
+            height: 50px !important;
+            max-height: 50px !important;
+            margin-bottom: 0;
+            border: none;
+            background-color: #222;
+        }
+
+        .navbar-header {
+            float: left;
+            height: 50px;
+        }
+
+        .navbar-brand {
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        /* Chống tràn các icon góc phải Navbar */
+        .navbar-top-links {
+            margin: 0 !important;
+            float: right !important;
+            display: flex !important;
+            align-items: center !important;
+            height: 50px !important;
+        }
+
+        .navbar-top-links > li {
+            display: inline-block !important;
+            height: 50px !important;
+        }
+
+        .navbar-top-links > li > a {
+            padding: 15px !important;
+            height: 50px !important;
+            line-height: 20px !important;
+            color: #9d9d9d;
+        }
+
+        .navbar-top-links .dropdown-menu {
+            top: 50px;
+        }
+
+        /* --- SỬA VỊ TRÍ SIDEBAR (ĐẶT TOP: 50PX ĐỂ KHÔNG ĐÈ NAVBAR) --- */
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            top: 50px; /* Nhường 50px phía trên cho Navbar */
+            left: 0;
+            bottom: 0;
+            background-color: #f8f8f8;
+            border-right: 1px solid #e7e7e7;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .sidebar ul li {
+            border-bottom: 1px solid #e7e7e7;
+        }
+
+        .sidebar ul li a {
+            color: #337ab7;
+            padding: 12px 15px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover,
+        .sidebar ul li a:focus {
+            background-color: #eee;
+            color: #23527c;
+        }
+
+        /* Menu con cấp 2 và cấp 3 */
+        .nav-second-level li a {
+            padding-left: 30px;
+            background-color: #f8f8f8;
+        }
+
+        .nav-third-level li a {
+            padding-left: 52px;
+            background-color: #f8f8f8;
+        }
+
+        /* CSS Mũi tên thu gọn/mở ra */
+        .sidebar .arrow {
+            float: right;
+            line-height: 1.42857143;
+        }
+
+        .sidebar .arrow:before {
+            content: "\f104";
+            font-family: FontAwesome;
+        }
+
+        .sidebar .active > a > .arrow:before {
+            content: "\f107";
+            font-family: FontAwesome;
+        }
+
+        .sidebar-search {
+            padding: 15px;
+        }
+
+        .sidebar ul li a.active {
+            background-color: #e7e7e7;
+            font-weight: bold;
+        }
+
+        /* Khung nội dung chính */
+        #page-wrapper {
+            padding: 15px 25px;
+            margin-left: 250px;
+            margin-top: 50px;
+            min-height: calc(100vh - 50px);
+            background-color: #fff;
+            border-left: 1px solid #e7e7e7;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <!-- 1. PHẦN NAVBAR (THANH MENU TRÊN CÙNG) -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+            </div>
+
+            <!-- Các nút icon bên phải Navbar -->
+            <ul class="nav navbar-right navbar-top-links">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> User <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a></li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 2. PHẦN SIDEBAR (THANH MENU BÊN TRÁI) -->
+            <aside class="sidebar navbar-default" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
+                        <!-- Ô tìm kiếm -->
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
@@ -10,95 +195,83 @@
                                     </button>
                                 </span>
                             </div>
-                            <!-- /input-group -->
                         </li>
+
+                        <!-- Trang chủ -->
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
+
+                        <!-- Menu Charts (Cấp 2) -->
                         <li>
-                            <a href="#" data-submenu-toggle="true" aria-expanded="false"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.cshtml">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
+                                <li><a href="flot.cshtml">Flot Charts</a></li>
+                                <li><a href="morris.html">Morris.js Charts</a></li>
                             </ul>
-                            <!-- /.nav-second-level -->
                         </li>
+
+                        <!-- Link đơn -->
+                        <li><a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a></li>
+                        <li><a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a></li>
+
+                        <!-- Menu UI Elements (Cấp 2) -->
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#" data-submenu-toggle="true" aria-expanded="false"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
+                                <li><a href="panels-wells.html">Panels and Wells</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="notifications.html">Notifications</a></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="icons.html">Icons</a></li>
+                                <li><a href="grid.html">Grid</a></li>
                             </ul>
-                            <!-- /.nav-second-level -->
                         </li>
+
+                        <!-- Menu Đa Cấp (Up to Cấp 3) -->
                         <li>
-                            <a href="#" data-submenu-toggle="true" aria-expanded="false"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
+                                <li><a href="#">Second Level Item</a></li>
+                                <li><a href="#">Second Level Item</a></li>
                                 <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-submenu-toggle="true" aria-expanded="false">Third Level <span class="fa arrow"></span></a>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
+                                        <li><a href="#">Third Level Item</a></li>
+                                        <li><a href="#">Third Level Item</a></li>
+                                        <li><a href="#">Third Level Item</a></li>
                                     </ul>
-                                    <!-- /.nav-third-level -->
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
                         </li>
+
+                        <!-- Menu Sample Pages (Cấp 2) -->
                         <li>
-                            <a href="#" data-submenu-toggle="true" aria-expanded="false"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html" class="active">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
+                                <li><a href="blank.html">Blank Page</a></li>
+                                <li><a href="login.html">Login Page</a></li>
                             </ul>
-                            <!-- /.nav-second-level -->
                         </li>
                     </ul>
                 </div>
             </aside>
+        </nav>
+
+      
+
+    </div>
+
+    <!-- 4. JS Thư viện bắt buộc -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.9/metisMenu.min.js"></script>
+
+    <!-- 5. Kích hoạt metisMenu -->
+    <script>
+        $(document).ready(function() {
+            $('#side-menu').metisMenu();
+        });
+    </script>
+</body>
+</html>

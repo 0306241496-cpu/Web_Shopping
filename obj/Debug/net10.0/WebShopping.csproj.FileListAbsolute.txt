@@ -44,8 +44,6 @@ D:\Web_Shopping\obj\Debug\net10.0\WebShopping.genruntimeconfig.cache
 D:\Web_Shopping\obj\Debug\net10.0\ref\WebShopping.dll
 D:\Web_Shopping\obj\Debug\net10.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Web_Shopping\obj\Debug\net10.0\compressed\zm6sqfjd0t-{0}-ugwln8to84-ugwln8to84.gz
-D:\Web_Shopping\obj\Debug\net10.0\compressed\1q4css8d3b-{0}-sj9tijliwo-sj9tijliwo.gz
-D:\Web_Shopping\obj\Debug\net10.0\compressed\joj460j8xv-{0}-sj9tijliwo-sj9tijliwo.gz
 D:\Web_Shopping\obj\Debug\net10.0\WebShopping.csproj.AssemblyReference.cache
 D:\Web_Shopping\bin\Debug\net10.0\Azure.Core.dll
 D:\Web_Shopping\bin\Debug\net10.0\Azure.Identity.dll
@@ -227,3 +225,5 @@ D:\Web_Shopping\obj\Debug\net10.0\WebShopp.03C262A9.Up2Date
 D:\Web_Shopping\obj\Debug\net10.0\compressed\bt92axns0x-{0}-l98s1f2irw-l98s1f2irw.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\db34ktw88n-{0}-ss25vi1sum-ss25vi1sum.gz
 D:\Web_Shopping\obj\Debug\net10.0\compressed\pi5z4jtsyd-{0}-p6c4eoi30l-p6c4eoi30l.gz
+D:\Web_Shopping\obj\Debug\net10.0\compressed\1q4css8d3b-{0}-vd5hhlnhur-vd5hhlnhur.gz
+D:\Web_Shopping\obj\Debug\net10.0\compressed\joj460j8xv-{0}-vd5hhlnhur-vd5hhlnhur.gz
